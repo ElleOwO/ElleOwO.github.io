@@ -134,17 +134,14 @@ i {
 @media only screen and (max-width: 450px) {
     /* For mobile phones: */
     .menu, .main, .right {
-        width: 70%;
+        width: 60%;
 
     }
 
     #open {
-        font-size: 10vw;
+        font-size: 7vw;
     }
 
-    .main a{
-        width: 300px;
-    }
     p {
         font-size: 2.5vw;
         width: 100%;
