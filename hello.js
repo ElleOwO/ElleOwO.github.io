@@ -8,6 +8,8 @@ function openNav() {
 
 function closeNav() {
     console.log("Closing navigation");
+    document.getElementById("open").style.animation ="fade-in 10s";
+
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("open").style.zIndex = "99999";
     document.getElementById("close").style.zIndex = "0";
