@@ -50,14 +50,14 @@ p {
 }
 
 #open {
-    margin-left: 54px;
-    padding: 5px;
+    margin-left: 60px;
     float: left;
-    display: block;
+    /*display: block;*/
     z-index: 9999;
     font-size: 5vw;
     font-family: "Source Code Pro", serif;
     color:#ADADFF;
+    line-height: 1em;
 }
 
 .open span:hover {
@@ -130,7 +130,7 @@ i {
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
     /* For mobile phones: */
     .menu, .main, .right {
         width: 80%;
@@ -138,7 +138,8 @@ i {
     }
 
     #open {
-        font-size: 30vw;
+        font-size: 20vw;
+        line-height: 5px;
     }
 
 
