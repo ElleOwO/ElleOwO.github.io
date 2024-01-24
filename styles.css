@@ -57,7 +57,7 @@ p {
     font-size: 5vw;
     font-family: "Source Code Pro", serif;
     color:#ADADFF;
-    line-height: 1em;
+    line-height: 60px;
 }
 
 .open span:hover {
@@ -138,8 +138,8 @@ i {
     }
 
     #open {
-        font-size: 20vw;
-        line-height: 5px;
+        font-size: 30vw;
+        line-height: 0.5em;
     }
 
 

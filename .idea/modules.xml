@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Website_Portfolio.iml" filepath="$PROJECT_DIR$/Website_Portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stylesheets/stylesheets.iml" filepath="$PROJECT_DIR$/stylesheets/stylesheets.iml" />
     </modules>
   </component>
 </project>
