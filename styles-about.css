@@ -17,11 +17,6 @@ body {
 
 }
 
-#profile-div{
-    display: flex;
-}
-
-
 h1 {
     text-align: left;
     font-weight: 100;
@@ -29,7 +24,7 @@ h1 {
     font-size: 6em;
     letter-spacing: 6px;
     height: 50px;
-    width: 500px;
+    width: 1000px;
 
 }
 
@@ -54,6 +49,27 @@ p {
 
 }
 
+#profile-div{
+    display: flex;
+}
+
+#about-pic-container{
+    align-self: flex-end;
+    position: relative;
+    #top: 30px;
+    left: -100px;
+    max-width: 40%;
+    max-height: 50%;
+    margin: 20px;
+}
+#about-pic {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+
+
+}
+
 #open {
     margin-left: 60px;
     float: left;
@@ -65,7 +81,7 @@ p {
     line-height: 60px;
 }
 
-.open span:hover {
+.open:hover {
     color: #ffafcc;
 }
 
@@ -125,11 +141,9 @@ i {
 .footer {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
     color: #CCCCFF;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 20em auto 10px;
     font-size: 1vw;
 
 }
@@ -137,6 +151,17 @@ i {
 
 @media only screen and (max-width: 650px) {
     /* For mobile phones: */
+    #profile-div{
+        display: flex;
+        flex-direction: column;
+    }
+    #about-pic-container{
+        align-self: start;
+        margin-left:65px;
+        position: sticky;
+    }
+    #about-pic{
+    }
     .menu, .main, .right {
         width: 80%;
 
@@ -147,6 +172,18 @@ i {
         line-height: 0.5em;
     }
 
+    h1 {
+        text-align: left;
+        font-weight: 100;
+        z-index: 1;
+        font-size: 2em;
+        letter-spacing: 6px;
+        height: 50px;
+        width: 200px;
+        margin-top: 50px; /*change with shorthand for top and bottom*/
+        margin-bottom: 50px;
+
+    }
 
     p {
         font-size: 3.5vw;
@@ -157,7 +194,7 @@ i {
 }
 
 /*body animation*/
-h1, .open  {
+h1, .open, #about-pic-container  {
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;

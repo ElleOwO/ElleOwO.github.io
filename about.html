@@ -5,7 +5,7 @@
 <!--<script src="https://kit.fontawesome.com/8e88782acb.js" crossorigin="anonymous"></script>-->
 
 <!--stylesheets-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-about.css">
     <link rel="stylesheet" href="stylenav.css">
 <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,13 +22,12 @@
 
 <body>
 <script src="hello.js" defer></script>
-<script src="hello.js" defer></script>
-
 
 
 <div id="mySidenav" class="sidenav">
     <a href="#" class="close" id="close" onclick="closeNav()">&times;</a>
-    <a href="#" onclick="window.location.href = 'About.html'">About</a>
+    <div id="return-slider" onclick="window.location.href = 'index.html'"><a href="#" ><IMG id="return-icon" src="icons8-return-30.png"></a><a id="return-text">Return</a></div>
+    <a href="#" onclick="window.location.href = 'about.html'">About</a>
     <a href="#">Services</a>
     <a href="#">Projects</a>
     <a href="#">Contact</a>
@@ -36,21 +35,26 @@
 <span onclick="openNav()" id="open" class="open">...</span>
 
 
-<div>
+<div id="profile-div">
     <div class="main">
-        <h1>l y i n</h1>
+        <h1>A b o u t M e</h1>
         <div class="underline">
             <a>hello</a></div>
        <span class="visually-hidden"></span>
         <h4>Friday, January 19th, 2024</h4>
-        <p>This is v.1.0 of my portfolio project. I will be documenting my progress and implementations along the way. This version uses pure html5, css, and javascript. The first iteration will be playing with the classic design rules of contrast rules with an attempt to defy some design formalities. In this example, h1 should be bolder than the subheadings. So far my aesthetic decisions seem a tad bit questionable. </p>
+        <p>This is v.1.0 of my portfolio project. I will be documenting my progress and implementations along the way. This version uses pure html5, css, and javascript. The first iteration will be playing with the classic design rules of contrast with an attempt to defy some design formalities. In this example, h1 should be bolder than the subheadings. So far my aesthetic decisions seem a tad bit questionable. </p>
     </div>
+    <div id="about-pic-container"><img src="about-me.JPG" alt="photo of me" id="about-pic"></div>
+
 </div>
 
 <div class="footer">
     <a href="https://www.linkedin.com/in/lyin-mya-5453562aa/"><i class="fab fa-linkedin" style="color: #ffffff;"></i></a>
     © copyright Lyin Mya
+
+
 </div>
+
 
 
 </body>
