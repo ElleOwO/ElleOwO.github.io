@@ -21,6 +21,31 @@
     transition: 0.3s;
     z-index: 5;
 }
+#return-slider{
+    display: flex;
+    flex-direction: row;
+}
+#return-text{
+   position: absolute;
+    margin-left: 30px;
+    margin-top: 5px;
+    color: transparent;
+    font-size: 15px;
+}
+/*return animation*/
+#return-text:hover{
+    color: #ffffff;
+    animation: return-hover;
+    transition: all 0.3s ease-in-out;
+}
+#return-text:after{
+    color: #ffffff;
+    animation: return-hover;
+}
+
+
+
+
 
 .sidenav a:hover {
     color: #ffafcc;
@@ -34,7 +59,9 @@
     font-size: 36px;
     margin-left: 50px;
 }
-
+#return-icon{
+    width: 0.9em;
+}
 .close {
     cursor: pointer;
 

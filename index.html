@@ -7,7 +7,9 @@
 <!--stylesheets-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylenav.css">
-<!--fonts-->
+    <link rel="stylesheet" href="styles-threejs.css">
+
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -23,18 +25,21 @@
 <body>
 <script src="hello.js" defer></script>
 
+<!-----------NAVIGATION-------------------->
 
 <div id="mySidenav" class="sidenav">
     <a href="#" class="close" id="close" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#" onclick="window.location.href = 'About.html'">About</a>
+    <a href="#" onclick="window.location.href = 'webpages/development.html'">Development</a>
+    <a href="#">Projects</a>
+    <a href="#" onclick="window.location.href = 'webpages/sources.html'">Sources</a>
 </div>
 <span onclick="openNav()" id="open" class="open">...</span>
+<span id ="mode-container"><input id="toggle" type="checkbox" onclick="myFunction()">
+<label for="toggle"></label>
+</span>
 
-
-<div>
+<div id="profile-div">
     <div class="main">
         <h1>l y i n</h1>
         <div class="underline">
@@ -43,6 +48,12 @@
         <h4>Friday, January 19th, 2024</h4>
         <p>This is v.1.0 of my portfolio project. I will be documenting my progress and implementations along the way. This version uses pure html5, css, and javascript. The first iteration will be playing with the classic design rules of contrast rules with an attempt to defy some design formalities. In this example, h1 should be bolder than the subheadings. So far my aesthetic decisions seem a tad bit questionable. </p>
     </div>
+    <div id="container3D"></div>
+    <div id="about-pic-container">
+        <div id="frame1"><iframe src="../Website_Portfolio/web-3dmodel-threejs-main/index.html" title="Iframe Example"></iframe></div>
+
+    </div>
+
 </div>
 
 <div class="footer">
@@ -50,6 +61,7 @@
     © copyright Lyin Mya
 </div>
 
+<script type="module" src="js/main.js"></script>
 
 </body>
 </html>
