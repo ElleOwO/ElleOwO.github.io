@@ -4,12 +4,39 @@
 
 
 }
-
+body {
+    background: linear-gradient(353deg, #fed2de, #ffedf2);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
 body {
     display: flex;
     flex-direction: column;
-    background: rgb(255,229,236);
-    background: linear-gradient(0deg, rgba(255,229,236,1) 0%, rgba(300,229,236,0.790375525210084) 58%);
+
+
     background-size: cover;
    /* width: 100vw;
     height: 100vh;*/
@@ -37,6 +64,19 @@ h1 {
 
 
 }
+#right-side {
+    justify-content: left;
+    margin-top: 178px;
+    margin-left: 80px;
+    margin-right: 50px;
+    width: 30%;
+    color: darkgrey;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+
+
+}
 
 p {
 
@@ -50,7 +90,7 @@ p {
 
 #profile-div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #frame1{
@@ -60,6 +100,10 @@ p {
     width: 1200px; /* over ride constraints and show all */
     white-space: nowrap;
 
+
+}
+iframe{
+    border: #ffafcc;
 
 }
 
@@ -188,7 +232,7 @@ i {
 }
 
 /*body animation*/
-h1, .open, #about-pic-container  {
+h1, .open, #about-pic-container{
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
@@ -204,7 +248,7 @@ h4 {
     -moz-animation: fadeIn 4s;
     -o-animation: fadeIn 4s;
 }
-p {
+p, h5 {
     animation: fadeIn 4.5s;
     -webkit-animation: fadeIn 4.5s;
     -moz-animation: fadeIn 4.5s;
