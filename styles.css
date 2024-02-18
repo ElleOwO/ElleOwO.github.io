@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: rgb(255,229,236);
+    /*background: rgb(255,229,236);*/
     background: linear-gradient(0deg, rgba(255,229,236,1) 0%, rgba(300,229,236,0.790375525210084) 58%);
     background-size: cover;
     width: 100vw;
@@ -16,6 +16,7 @@ body {
     cursor: url("cursor.png") auto;
 
 }
+
 
 #profile-div{
     display: flex;
@@ -78,6 +79,18 @@ p {
     padding: 0 1em 1em 4em;
 
 }
+#mode-container{
+    align-self: flex-end;
+    margin-right: 50px;
+    /*display: block;*/
+    color:#ADADFF;
+    z-index: 9999;
+    top:-20px;
+    position: relative;
+}
+
+
+
 
 .underline{
 display: flex;
@@ -202,4 +215,49 @@ p {
 @-ms-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/*dark mode*/
+.dark-mode {
+    background: none;
+    background-color: black;
+
+
+
+}
+/*dark mode button*/
+
+#toggle {
+    display: none;
+}
+
+label {
+    display: inline-block;;
+    width: 40px;
+    height: 20px;
+    background-image: linear-gradient(#ADADFF, #d2d2f6);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#toggle:checked + label {
+    background-image: linear-gradient(#ADADFF, #d2d2f6);
+}
+
+#toggle:checked + label::before {
+    transform: translateX(20px);
 }

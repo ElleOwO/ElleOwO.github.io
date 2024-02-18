@@ -16,4 +16,12 @@ function closeNav() {
     document.getElementById("close").style.zIndex = "0";
     document.getElementById("return-icon").style.animation= "none!;";
 
+
+}
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    /*document.getElementById("toggle-mode").style.background = "black";*/
+
 }
