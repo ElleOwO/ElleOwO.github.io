@@ -12,34 +12,30 @@ body {
     -o-animation: AnimationName 4s ease infinite;
     animation: AnimationName 4s ease infinite;
 }
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 88%}
-    50%{background-position:100% 13%}
-    100%{background-position:0% 88%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 88%}
-    50%{background-position:100% 13%}
-    100%{background-position:0% 88%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 88%}
-    50%{background-position:100% 13%}
-    100%{background-position:0% 88%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 88%}
-    50%{background-position:100% 13%}
-    100%{background-position:0% 88%}
-}
+
+
 body {
     display: flex;
     flex-direction: column;
 
 
-    background-size: cover;
-   /* width: 100vw;
-    height: 100vh;*/
+
+        background: linear-gradient(0deg,#cae7ff,#cfdfff,#ffffff);
+        background-size: 180% 180%;
+        animation: gradient-animation 3s ease infinite;
+
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
 }
 
@@ -62,25 +58,14 @@ h1 {
     white-space: nowrap;
     width: 1px;
 
-
 }
-#right-side {
-    justify-content: left;
-    margin-top: 178px;
-    margin-left: 80px;
-    margin-right: 50px;
-    width: 30%;
-    color: darkgrey;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 1.5vw;
 
+h4{margin-bottom: 5px;}
 
-}
 
 p {
 
-    font-weight: 600;
+    font-weight: 200;
     letter-spacing: 1px;
     font-size: 1.5vw;
     width: 100%;
@@ -88,9 +73,36 @@ p {
 
 }
 
+.features{
+    font-weight: 200;
+}
+
 #profile-div{
     display: flex;
     flex-direction: row;
+    align-items:flex-start;
+    align-content:flex-start;
+}
+
+#right-side {
+    justify-content: left;
+    margin-top: 178px;
+    margin-left: 80px;
+    margin-right: 50px;
+    width: 30%;
+    color: darkgrey;
+    letter-spacing: 1px;
+    
+
+
+}
+#log-box{
+    font-weight: 200;
+    overflow: scroll;
+}
+#glitch-log{
+    height: 300px;
+    font-weight: 200;
 }
 
 #frame1{
@@ -99,6 +111,7 @@ p {
     height: 700px;
     width: 1200px; /* over ride constraints and show all */
     white-space: nowrap;
+    margin-top: 100px;
 
 
 }
@@ -139,13 +152,14 @@ display: flex;
     float: inherit;
 
 }
+/* underline */
 .main a{
     /*by removing absolute and using margin top i was able to keep the underline relative to h1*/
     z-index: 2;
     left: 15%;
     margin-top: -82px;
     height: 60px;
-    width: 300px;
+    width: 1500px;
 
     color: rgba(204,204,255, 0);
     background-image: linear-gradient(#CCCCFF, #CCCCFF);
