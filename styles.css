@@ -11,7 +11,7 @@ body {
     /*background: rgb(255,229,236);*/
     background: linear-gradient(0deg, rgba(255,229,236,1) 0%, rgba(300,229,236,0.790375525210084) 58%);
     background-size: cover;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     cursor: url("cursor.png") auto;
 
@@ -25,7 +25,55 @@ body {
 
 #about-pic-container{
 
-    margin: -100px;
+    margin: 100px;
+}
+
+#canvas{
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    margin-left: 400px;
+    overflow: hidden;
+    display: flex;
+}
+#container3D{
+ /*   z-index: unset;*/
+    top: 100px;
+    align-self: start;
+    width: 10vw !important;
+    height: 100vh !important;
+    position: absolute;
+
+
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;}
+
+#container-melody {
+    width: 10vw !important;
+    height: 100vh !important;
+    position: absolute;
+
+    z-index: 999;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+#frame2{
+    margin-top:-200px;
+    display: none;
+    overflow: visible;
+    z-index: 9999;
 }
 
 
@@ -60,6 +108,30 @@ p {
     font-size: 1.5vw;
     width: 60%;
     color:#ADADFF;
+    position: absolute;
+    top: 350px;
+    max-width: 50%;
+    z-index: 1;
+}
+
+
+.heart-deco{
+    opacity: 40%;
+    z-index: -1000;
+
+}
+#heart-para{
+    width: 40rem;
+    margin-top: -200px;
+    margin-left: -90px;
+}
+#heart-frame{
+    width: 50rem;
+    top: 50px;
+    margin-left: 400px;
+    margin-right: 0;
+    height: auto;
+    position: absolute;
 
 }
 
@@ -67,11 +139,12 @@ p {
     margin-left: 60px;
     float: left;
     /*display: block;*/
-    z-index: 9998;
+    z-index: 9999;
     font-size: 5vw;
     font-family: "Source Code Pro", serif;
     color:#ADADFF;
     line-height: 60px;
+    width: 100px;
 }
 
 #open :hover {
@@ -85,9 +158,9 @@ p {
     color: #CCCCFF;
     float: left;
     width: 60%;
-    padding: 0 1em 1em 4em;
-
+    padding: 0 1em 1em 6em;
 }
+
 #mode-container{
     align-self: flex-end;
     margin-right: 50px;
@@ -97,8 +170,6 @@ p {
     top:-20px;
     position: relative;
 }
-
-
 
 
 .underline{
@@ -128,7 +199,7 @@ display: flex;
     letter-spacing: 6px;
 
 }
-
+/*THE UNDERLINE EFFECT */
 .main a:hover,
 .main a:focus,
 .main a:active {
@@ -227,10 +298,10 @@ p {
 
 /*dark mode*/
 .dark-mode {
-    background: none;
-    background-color: black;
+    background: #000;
 
-
+}
+.heart-dark{
 
 }
 /*dark mode button*/
@@ -258,6 +329,7 @@ label::before {
     left: 2px;
     width: 16px;
     height: 16px;
+
     background-color: white;
     border-radius: 50%;
     transition: transform 0.3s;

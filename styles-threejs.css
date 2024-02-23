@@ -1,9 +1,8 @@
-#container3D canvas {
+/*#container3D canvas {
     width: 100vw !important;
     height: 100vh !important;
     position: absolute;
 
-    z-index: 99999;
 }
 iframe{
     border: 0;
@@ -14,7 +13,7 @@ iframe{
     margin-top:100px;
 
     transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;}
+    animation: float 3s ease-in-out infinite;}
 
 @keyframes float {
     0% {
@@ -26,4 +25,4 @@ iframe{
     100% {
         transform: translatey(0px);
     }
-}
+}*/

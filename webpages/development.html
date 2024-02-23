@@ -21,14 +21,14 @@
 </head>
 
 <body>
-<script src="../hello.js" defer></script>
+<script src="../scripts/main.js" defer></script>
 
 <!-----------NAVIGATION-------------------->
 
 <div id="mySidenav" class="sidenav">
     <a href="#" class="close" id="close" onclick="closeNav()">&times;</a>
     <div id="return-slider" onclick="href = '/'"><a href="../index.html" ><IMG href="../index.html" id="return-icon" src="../icons8-return-30.png"></a><a href="../index.html" id="return-text">Return</a></div>
-    <a href="#" onclick="window.location.href = 'about.html'">About</a>
+    <a href="../about.html">About</a>
     <a href="#">Services</a>
     <a href="#">Projects</a>
     <a href="#">Contact</a>
@@ -60,12 +60,14 @@
         <div id="frame1"><iframe src="archived/v1.0.html" height="700vw" width="1000px" title="Iframe Example"></iframe></div>
 
     </div>
-    <div id="right-side"><h4>Possible Future Implementations</h4>
+    <div id="right-side"><h4>Implementation Direction</h4>
+        <ul><li>Establish React features</li></ul>
         <h5>
             Glitch Log:<ol>
-            <li>February 18th, 2024: Nav button opens when clicking the top area of the site</li>
+            <li>February 18th, 2024: <strike>Nav button opens when clicking the top area of the site</strike>Fixed: </strong>changed open span to 100px</li>
             <li>February 18th, 2024: Title underline is not dynamically changing to the width of the title</li>
-            <li>February 18th, 2024: Development page does not return to home</li>
+            <li>February 18th, 2024:<strike>Development page does not return to home</strike> <strong> Fixed: </strong>used "../"to link files above current directory</li>
+            <li>February 22nd, 2024: z-index layering issues, night-mode button has to be pressed twice</li>
 
 
         </ol></h5></div>

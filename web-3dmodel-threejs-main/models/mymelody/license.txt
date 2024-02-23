@@ -1,0 +1,11 @@
+Model Information:
+* title:	My Melody from Sanrio
+* source:	https://sketchfab.com/3d-models/my-melody-from-sanrio-9c79a9a08f3649bca4b7569ce9afcf5a
+* author:	{ ililium }; (https://sketchfab.com/ililium.xyz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "My Melody from Sanrio" (https://sketchfab.com/3d-models/my-melody-from-sanrio-9c79a9a08f3649bca4b7569ce9afcf5a) by { ililium }; (https://sketchfab.com/ililium.xyz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

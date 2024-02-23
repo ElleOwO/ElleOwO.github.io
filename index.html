@@ -23,19 +23,19 @@
 </head>
 
 <body>
-<script src="hello.js" defer></script>
+<script type="module" src="hello.js" defer></script>
 
 <!-----------NAVIGATION-------------------->
 
 <div id="mySidenav" class="sidenav">
-    <a href="#" class="close" id="close" onclick="closeNav()">&times;</a>
-    <a href="#" onclick="window.location.href = '../About.html'">About</a>
+    <a href="#" class="close" id="close">&times;</a>
+    <a href="about.html">About</a>
     <a href="#" onclick="window.location.href = 'webpages/development.html'">Development</a>
     <a href="#">Projects</a>
     <a href="#" onclick="window.location.href = 'webpages/sources.html'">Sources</a>
 </div>
-<span onclick="openNav()" id="open" class="open">...</span>
-<span id ="mode-container"><input id="toggle" type="checkbox" onclick="myFunction()">
+<span  id="open" class="open">...</span>
+<span id ="mode-container"><input aria-pressed="false" id="toggle" type="checkbox" >
 <label for="toggle"></label>
 </span>
 
@@ -46,13 +46,20 @@
             <a>hello</a></div>
        <span class="visually-hidden"></span>
         <h4>Friday, January 19th, 2024</h4>
+        <img class="heart-deco" id="heart-para" alt="abstract shape" src="../Website_Portfolio/imgs/heart-para.png">
         <p>This is v.1.0 of my portfolio project. I will be documenting my progress and implementations along the way. This version uses pure html5, css, and javascript. The first iteration will be playing with the classic design rules of contrast rules with an attempt to defy some design formalities. In this example, h1 should be bolder than the subheadings. So far my aesthetic decisions seem a tad bit questionable. </p>
     </div>
-    <div id="container3D"></div>
-    <div id="about-pic-container">
-        <div id="frame1"><iframe src="../Website_Portfolio/web-3dmodel-threejs-main/index.html" title="Iframe Example"></iframe></div>
 
-    </div>
+    <div id="canvas">
+        <div id="container-melody"></div>
+
+        <div id="container3D" class ="hidden"></div>
+        <img id="heart-frame" class="heart-deco" alt="abstract shape" src="../Website_Portfolio/imgs/heart-frame.png"></div>
+ <!--   <div id="about-pic-container">
+
+        <div id="frame2"><iframe src="../Website_Portfolio/web-3dmodel-threejs-main/melody.html" title="mymelody-3d"></iframe></div>
+
+    </div> -->
 
 </div>
 
@@ -60,8 +67,10 @@
     <a href="https://www.linkedin.com/in/lyin-mya-5453562aa/"><i class="fab fa-linkedin" style="color: #ffffff;"></i></a>
     © copyright Lyin Mya
 </div>
+<script type="module" src="web-3dmodel-threejs-main/js/new.js"></script>
+<!--<script id="melody" type="module" src="web-3dmodel-threejs-main/js/melody.js"></script>
+<script id="kuromi" type="module" src="web-3dmodel-threejs-main/js/module.js"></script>-->
 
-<script type="module" src="js/main.js"></script>
 
 </body>
 </html>
