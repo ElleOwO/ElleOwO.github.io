@@ -9,7 +9,7 @@ let open = document.querySelector("#open");
 open.addEventListener("click", () => {
     console.log("Opening navigation");
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("open").style.zIndex = "0";
+    document.getElementById("open").style.zIndex = "999";
     document.getElementById("close").style.zIndex = "99999";
     const returnIcon = document.getElementById("return-icon");
     if (returnIcon) {

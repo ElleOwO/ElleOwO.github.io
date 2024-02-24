@@ -25,7 +25,39 @@ h1 {
     letter-spacing: 6px;
     height: 50px;
     width: 1000px;
+}
 
+.txt { -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.txt:hover {
+    /*color:#D9D9FF;*/
+    /*text-shadow:2px 2px 3px #fff;*/
+    font-weight: 100;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.txt2 {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.txt2:hover {
+    /*text-shadow:2px 2px 3px #fff;*/
+    text-decoration: underline;
+    text-decoration-thickness: 1%;
+
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .visually-hidden {clip-path: inset(100%);
@@ -74,11 +106,19 @@ p {
 }
 #sub-text{
     font-weight: 200;
-    width: 55%;
+    max-width: 45%;
     padding: 5px;
-    margin-left: 10px;
+    margin-left: 40px;
     border-radius: 3px;
     font-size: 1.2vw;
+
+}
+#sub-text:hover{
+    /*font-weight: 500;*/
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #484864;
+
 
 }
 
@@ -101,22 +141,32 @@ p {
     z-index: 10;
 
 
+    animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 #open {
     margin-left: 60px;
     float: left;
-    /*display: block;*/
     z-index: 9999;
     font-size: 5vw;
     font-family: "Source Code Pro", serif;
     color:#ADADFF;
     line-height: 60px;
-}
 
-.open:hover {
-    color: #ffafcc;
-}
+
+    }
 
 .main {
     display: flex;
@@ -157,11 +207,11 @@ display: flex;
 
 }
 
-.main a:hover,
-.main a:focus,
-.main a:active {
-    background-size: 100% 0.1em;
-}
+/*.main a:hover,*/
+/*.main a:focus,*/
+/*.main a:active {*/
+/*    background-size: 100% 0.1em;*/
+/*}*/
 
 
 i {
