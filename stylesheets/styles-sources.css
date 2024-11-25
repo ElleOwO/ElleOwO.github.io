@@ -4,16 +4,38 @@
 
 
 }
+body {
+    background: linear-gradient(353deg, #fed2de, #ffedf2);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
 
 body {
     display: flex;
     flex-direction: column;
-    background: rgb(255,229,236);
-    background: linear-gradient(0deg, rgba(255,229,236,1) 0%, rgba(300,229,236,0.790375525210084) 58%);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    cursor: url("cursor.png") auto;
+
+
+
+        background: linear-gradient(0deg,#cae7ff,#cfdfff,#ffffff);
+        background-size: 180% 180%;
+        animation: gradient-animation 3s ease infinite;
+
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
 }
 
@@ -25,41 +47,7 @@ h1 {
     letter-spacing: 6px;
     height: 50px;
     width: 1000px;
-}
 
-.txt { -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-.txt:hover {
-    /*color:#D9D9FF;*/
-    /*text-shadow:2px 2px 3px #fff;*/
-    will-change: transition;
-    font-weight: 100;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-.txt2 {
-    will-change: transition;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-.txt2:hover {
-    /*text-shadow:2px 2px 3px #fff;*/
-    text-decoration: underline;
-    text-decoration-thickness: 1%;
-
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
 }
 
 .visually-hidden {clip-path: inset(100%);
@@ -70,105 +58,94 @@ h1 {
     white-space: nowrap;
     width: 1px;
 
-
 }
+
+h4{margin-bottom: 5px;}
+
 
 p {
 
-    font-weight: 600;
+    font-weight: 200;
     letter-spacing: 1px;
     font-size: 1.5vw;
-    width: 60%;
+    width: 100%;
     color:#ADADFF;
 
 }
-/*heart background images*/
 
-.heart-deco{
-    position: absolute;
-    opacity: 50%;
-    z-index: -1000;
-
-}
-#heart-para{
-    max-width: 100%;
-    height: 50rem;
-
-}
-#heart-frame{
-    width: 50rem;
-    height: auto;
-    top: -100px;
-    margin-left: -650px;
-    padding-left: 5px;
-    justify-self: center;
-
-
-
-}
-#sub-text{
+.features{
     font-weight: 200;
-    max-width: 45%;
-    padding: 5px;
-    margin-left: 40px;
-    border-radius: 3px;
-    font-size: 1.2vw;
-
-}
-#sub-text:hover{
-    /*font-weight: 500;*/
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: #484864;
-
-
 }
 
 #profile-div{
     display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    align-content:flex-start;
 }
 
-#about-pic-container{
-    align-self: flex-end;
-    position: relative;
-    top: -90px;
-    left: -100px;
-    max-width: 40%;
-    max-height: 50%;
-    margin: 20px;
-}
-#about-pic {
-    max-width: 100%;
-    height: auto;
-    z-index: 10;
+#right-side {
+    justify-content: left;
+    margin-top: 178px;
+    margin-left: 80px;
+    margin-right: 50px;
+    width: 30%;
+    color: #99BBFF;
+    letter-spacing: 1px;
 
 
-    animation: float 2.5s ease-in-out infinite;
+
+}
+#log-box{
+    font-weight: 200;
+    overflow: scroll;
+}
+#glitch-log{
+    height: 300px;
+    font-weight: 200;
 }
 
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-3px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
+#frame1{
+
+
+    height: 700px;
+    width: 1100px; /* over ride constraints and show all */
+    white-space: nowrap;
+    margin-top: 100px;
+    display: flex;
+
+
 }
+
+#blob-frame{
+    position: absolute;
+    height: 1500px;
+    margin-right: 1000px;
+    align-self: start;
+    margin-top: -700px;
+    z-index: -100;
+}
+
+iframe{
+    border: #ffafcc;
+
+}
+
 
 #open {
     margin-left: 60px;
     float: left;
+    /*display: block;*/
     z-index: 9999;
     font-size: 5vw;
     font-family: "Source Code Pro", serif;
     color:#ADADFF;
     line-height: 60px;
+}
 
-
-    }
+.open:hover {
+    color: #ffafcc;
+}
 
 .main {
     display: flex;
@@ -184,16 +161,16 @@ p {
 display: flex;
     max-height: 10px;
     float: inherit;
-    width: 1000px;
 
 }
+/* underline */
 .main a{
     /*by removing absolute and using margin top i was able to keep the underline relative to h1*/
     z-index: 2;
     left: 15%;
     margin-top: -82px;
     height: 60px;
-    width: 300px;
+    width: 1700px;
 
     color: rgba(204,204,255, 0);
     background-image: linear-gradient(#CCCCFF, #CCCCFF);
@@ -209,11 +186,11 @@ display: flex;
 
 }
 
-/*.main a:hover,*/
-/*.main a:focus,*/
-/*.main a:active {*/
-/*    background-size: 100% 0.1em;*/
-/*}*/
+.main a:hover,
+.main a:focus,
+.main a:active {
+    background-size: 100% 0.1em;
+}
 
 
 i {
@@ -243,18 +220,10 @@ i {
     }
     #about-pic-container{
         align-self: start;
-        margin-top: 90px;
-        margin-left:165px;
-        position: relative;
-        max-width: 100%;
+        margin-left:65px;
+        position: sticky;
     }
     #about-pic{
-        width: 500px;
-    }
-    #heart-frame{
-
-        margin-left: -260px;
-        width: 22em;
     }
     .menu, .main, .right {
         width: 80%;
@@ -285,11 +254,10 @@ i {
 
     }
 
-
 }
 
 /*body animation*/
-h1, .open, #about-pic-container  {
+h1, .open, #about-pic-container{
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
@@ -305,7 +273,7 @@ h4 {
     -moz-animation: fadeIn 4s;
     -o-animation: fadeIn 4s;
 }
-p {
+p, h5 {
     animation: fadeIn 4.5s;
     -webkit-animation: fadeIn 4.5s;
     -moz-animation: fadeIn 4.5s;

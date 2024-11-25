@@ -37,6 +37,7 @@ body {
     display: flex;
 }
 #container3D{
+    will-change: auto;
  /*   z-index: unset;*/
     top: 100px;
     align-self: start;
